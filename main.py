@@ -1,4 +1,5 @@
 import cv2
+import pyautogui
 import mediapipe as mp
 import pyautogui
 
@@ -9,7 +10,7 @@ mp_drawing = mp.solutions.drawing_utils
 
 screen_width, screen_height = pyautogui.size()
 
-cap = cv2.VideoCapture(1)
+cap = cv2.VideoCapture(0)
 
 prev_x = None
 prev_y = None
